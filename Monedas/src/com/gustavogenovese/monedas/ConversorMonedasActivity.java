@@ -60,6 +60,4 @@ public class ConversorMonedasActivity extends Activity {
 			textView.setText("");
 		}
 	}
-	
-	
 }
