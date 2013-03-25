@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConversorMonedasActivity" 
     android:orientation="vertical">
 
     <EditText
@@ -34,14 +33,14 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/botonCerrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="calcular"
         android:text="@string/cotizar" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textViewCotizacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

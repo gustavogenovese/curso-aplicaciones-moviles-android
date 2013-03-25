@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculadora</string>
+    <string name="action_settings">Settings</string>
+    <string name="numero_1">1</string>
+    <string name="numero_2">2</string>
+    <string name="numero_3">3</string>
+    <string name="numero_4">4</string>
+    <string name="numero_5">5</string>
+    <string name="numero_6">6</string>
+    <string name="numero_7">7</string>
+    <string name="numero_8">8</string>
+    <string name="numero_9">9</string>
+    <string name="numero_0">0</string>
+    <string name="oper_suma">+</string>
+    <string name="oper_resta">-</string>
+    <string name="oper_multi">x</string>
+    <string name="oper_div">/</string>
+    <string name="oper_igual">=</string>
+    <string name="oper_cancelar">C</string>
+</resources>

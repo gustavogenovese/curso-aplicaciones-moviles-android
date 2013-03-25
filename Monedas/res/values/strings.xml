@@ -2,8 +2,9 @@
 <resources>
 
     <string name="app_name">Monedas</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configuración</string>
     <string name="cotizar">Cotizar!!</string>
 	<string name="peso_a_dolar">Peso a Dolar</string>
 	<string name="dolar_a_peso">Dolar a Peso</string>
+	<string name="ingrese_cotizacion">Ingrese la cotizacion del día</string>
 </resources>

@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="digitoPresionado"
+            android:tag="7"
+            android:text="@string/numero_7"
+			style="@style/estiloBotones" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/estiloBotones"
+            android:onClick="digitoPresionado"
+            android:tag="8"
+            android:text="@string/numero_8" />
+
+        <Button
+            style="@style/estiloBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_weight="1"
+            android:onClick="digitoPresionado"
+            android:tag="9"
+            android:text="@string/numero_9" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="operacionPresionada"
+            android:tag="3"
+            style="@style/estiloBotones"
+            android:text="@string/oper_div" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="digitoPresionado"
+            android:tag="4"
+            style="@style/estiloBotonesConMargen"
+            android:text="@string/numero_4" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="digitoPresionado"
+            android:tag="5"
+            style="@style/estiloBotonesConMargen"
+            android:text="@string/numero_5" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="digitoPresionado"
+            android:tag="6"
+            style="@style/estiloBotonesConMargen"
+            android:text="@string/numero_6" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="operacionPresionada"
+            android:tag="2"
+            style="@style/estiloBotonesConMargen"
+            android:text="@string/oper_multi" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="digitoPresionado"
+            android:tag="1"
+            android:text="@string/numero_1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="digitoPresionado"
+            android:tag="2"
+            android:text="@string/numero_2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="digitoPresionado"
+            android:tag="3"
+            android:text="@string/numero_3" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="operacionPresionada"
+            android:tag="1"
+            android:text="@string/oper_resta" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="digitoPresionado"
+            android:text="@string/numero_0"
+            android:tag="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oper_cancelar"
+            android:onClick="cancelPresionado" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="igualPresionado"
+            android:text="@string/oper_igual" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="operacionPresionada"
+            android:tag="0"
+            android:text="@string/oper_suma" />
+    </LinearLayout>
+
+</LinearLayout>
