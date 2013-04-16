@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/iniciar_servicio_mensajes"
+        android:title="@string/iniciar_servicio_mensajes">
+    </item>
+    <item
+        android:id="@+id/detener_servicio_mensajes"
+        android:title="@string/detener_servicio_mensajes">
+    </item>
+
+</menu>

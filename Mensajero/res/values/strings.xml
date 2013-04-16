@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mensajero</string>
+    <string name="action_settings">Configuración</string>
+    <string name="login_usuario">Nombre de usuario</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_entrar">Entrar</string>
+    <string name="login_fallido_pregunta">Error al entrar al sistema. ¿Registrar nuevo usuario?</string>
+    <string name="iniciar_servicio_mensajes">Buscar mensajes</string>
+    <string name="detener_servicio_mensajes">Detener búsqueda</string>
+    <string name="nuevo_mensaje">Nuevo mensaje</string>
+    <string name="enviar">Enviar</string>
+    <string name="destinatario">Destinatario</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="contactos">Contactos</string>
+    <string name="de">De</string>
+    <string name="fecha">Fecha</string>
+	<string name="llamar">Llamar</string>
+	<string name="sms">SMS</string>
+	<string name="buscar_internet">Buscar en Google</string>
+</resources>
