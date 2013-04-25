@@ -62,7 +62,21 @@ public class MensajeroDB {
 			c.close();
 			return mensajeId;
 		}
+		c.close();
 		return null;
+	}
+
+	public String contenidoUltimoMensajeGuardado(){
+		SQLiteDatabase db = ayudanteSQL.getReadableDatabase();
+		Cursor c = db.query(TABLA_MENSAJES, null, null, null, null, null,
+								TABLA_MENSAJES_FECHA + " desc", "1" );
+		while (c.moveToNext()){
+			String mensaje = c.getString(c.getColumnIndex(TABLA_MENSAJES_MENSAJE));
+			c.close();
+			return mensaje;
+		}
+		c.close();
+		return "No hay mensajes";
 	}
 
 	public Cursor getAllMessages(){

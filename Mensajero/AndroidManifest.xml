@@ -37,10 +37,10 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity android:name=".MensajesActivity" />
         <activity android:name=".NuevoMensajeActivity" />
         <activity android:name=".ContactosActivity" />
@@ -59,11 +59,25 @@
             </intent-filter>
         </receiver>
         
-        
         <receiver android:name=".NetworkChangeReceiver" >
             <intent-filter>
                 <action android:name="android.net.nsd.STATE_CHANGED" />
             </intent-filter>
+        </receiver>
+        
+        <receiver
+            android:name=".MensajeroWidget"
+            android:label="Mensajero Widget!!!" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gustavogenovese.mensajero.ACTUALIZAR_WIDGET" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/mensajero_widget_provider" />
         </receiver>
     </application>
 

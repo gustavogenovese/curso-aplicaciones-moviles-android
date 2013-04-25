@@ -17,14 +17,22 @@ public class MensajeroApp extends Application {
 	public final static String MENSAJES_ENDPOINT = "/servicios/mensajes/listamensajes?sesion={token}&ultimomensajeid={idultimomensaje}";
 	public final static String MENSAJES_ENVIADOS_ENDPOINT = "/servicios/mensajes/listamensajesenviados?sesion={token}";
 
-	public final static String REGISTRAR_TOKEN_ENDPOINT=" /servicios/usuarios/registrartoken?sesion={token}&token={tokenpush}";
+	public final static String REGISTRAR_TOKEN_ENDPOINT = "/servicios/usuarios/registrartoken?sesion={token}&token={tokenpush}";
 	private String token;
+
+	private static MensajeroApp instance = null;
+
 	@Override
 	public void onCreate() {
 		super.onCreate();
+		instance = this;
 		mensajeroDB = new MensajeroDB(this);
 
 		new NetworkChangeReceiver().registrarAplicacion(this);
+	}
+
+	public static MensajeroApp getInstance(){
+		return instance;
 	}
 
 	public String getToken(){
